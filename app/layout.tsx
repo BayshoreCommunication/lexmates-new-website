@@ -20,7 +20,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lexmatesbd.com';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lexmates-new-website.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: 'Lexmates Advocates & Legal Advisers',
     images: [
       {
-        url: '/images/Og.png',
+        url: `${baseUrl}/images/Og.png`,
         width: 1200,
         height: 630,
         alt: 'Lexmates Advocates & Legal Advisers',
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: 'Lexmates Advocates & Legal Advisers | Dhaka, Bangladesh',
     description:
       'One of Dhaka’s most complete law firms, covering 40 practice areas across litigation and transactional law.',
-    images: ['/images/Og.png'],
+    images: [`${baseUrl}/images/Og.png`],
   },
   robots: {
     index: true,
