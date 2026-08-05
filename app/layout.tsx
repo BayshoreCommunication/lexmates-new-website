@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: 'Lexmates Advocates & Legal Advisers',
     images: [
       {
-        url: `${baseUrl}/images/Og.png`,
+        url: '/images/Og.png',
         width: 1200,
         height: 630,
         alt: 'Lexmates Advocates & Legal Advisers',
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: 'Lexmates Advocates & Legal Advisers | Dhaka, Bangladesh',
     description:
       'One of Dhaka’s most complete law firms, covering 40 practice areas across litigation and transactional law.',
-    images: [`${baseUrl}/images/Og.png`],
+    images: ['/images/Og.png'],
   },
   robots: {
     index: true,
