@@ -20,7 +20,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lexmates-new-website.vercel.app';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lexmates.com/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
