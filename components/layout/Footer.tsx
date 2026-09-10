@@ -21,8 +21,9 @@ export default function Footer() {
           <h4>Firm</h4>
           <ul>
             <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/partners">Partners</Link></li>
+            <li><Link href="/team">Meet the Team</Link></li>
             <li><Link href="/litigation">Litigation</Link></li>
+            <li><Link href="/blog">Blog & Resources</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -46,7 +47,7 @@ export default function Footer() {
             <li>USA: <a href="https://wa.me/18135686906" target="_blank" rel="noopener noreferrer">+1 813 568 6906</a></li>
             <li>Email: <a href="mailto:parvez.lexmates@gmail.com">parvez.lexmates@gmail.com</a></li>
             <li className="footer-contact-name">Kamrul Islam Arif</li>
-            <li>WhatsApp: <a href="https://wa.me/8801819402917" target="_blank" rel="noopener noreferrer">+880 1819-402917</a></li>
+            <li>WhatsApp: <a href="https://wa.me/8801727145247" target="_blank" rel="noopener noreferrer">+880 1727-145247</a></li>
             <li>Email: <a href="mailto:arif.advo@yahoo.com">arif.advo@yahoo.com</a></li>
             <li className="footer-address">Lexmates, House No-35 (3rd Floor), Road No-04, Block-F, Kolwalapara, Dhaka 1216, Bangladesh</li>
           </ul>

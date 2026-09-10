@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
@@ -15,10 +15,10 @@ export default function Header() {
       setScrolled(window.scrollY > 12);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Close mobile nav on route change
@@ -27,39 +27,40 @@ export default function Header() {
   }, [pathname]);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
-    { href: '/partners', label: 'Partners' },
-    { href: '/litigation', label: 'Litigation' },
-    { href: '/practice-areas', label: 'Practice Areas' },
-    { href: '/contact', label: 'Contact' },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About Us" },
+    { href: "/team", label: "Meet the Team" },
+    { href: "/litigation", label: "Litigation" },
+    { href: "/practice-areas", label: "Practice Areas" },
+    { href: "/blog", label: "Blog & Resources" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const isActive = (href: string) => {
-    if (href === '/') return pathname === '/';
+    if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
   return (
-    <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="container header-inner">
         <Link href="/" className="logo">
           <Image
             src="/images/logo.png"
             alt="Lexmates Advocates & Legal Advisers"
-            width={200}
-            height={44}
+            width={264}
+            height={58}
             className="logo-img"
             priority
           />
         </Link>
-        <nav className={`main-nav ${isOpen ? 'open' : ''}`} id="main-nav">
+        <nav className={`main-nav ${isOpen ? "open" : ""}`} id="main-nav">
           <ul>
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={isActive(link.href) ? 'active' : ''}
+                  className={isActive(link.href) ? "active" : ""}
                 >
                   {link.label}
                 </Link>
