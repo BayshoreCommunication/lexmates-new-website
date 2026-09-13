@@ -10,8 +10,8 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="Lexmates Advocates & Legal Advisers"
-              width={220}
-              height={54}
+              width={277}
+              height={68}
               className="logo-img footer-logo-img"
             />
           </div>

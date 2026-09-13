@@ -32,7 +32,7 @@ export default function Header() {
     { href: "/team", label: "Meet the Team" },
     { href: "/litigation", label: "Litigation" },
     { href: "/practice-areas", label: "Practice Areas" },
-    { href: "/blog", label: "Blog & Resources" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -48,8 +48,8 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="Lexmates Advocates & Legal Advisers"
-            width={264}
-            height={58}
+            width={328}
+            height={72}
             className="logo-img"
             priority
           />
