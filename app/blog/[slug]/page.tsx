@@ -83,9 +83,8 @@ export default async function BlogDetailPage({ params }: PageProps) {
     <>
       <Hero
         small
-        eyebrow={post.category?.join(', ').toUpperCase()}
         title={post.title}
-        subtitle={`${formatBlogDate(post.createdAt)} · ${post.author}`}
+        subtitle={formatBlogDate(post.createdAt)}
       />
 
       <section className="section">
