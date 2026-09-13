@@ -197,6 +197,19 @@ img { max-width: 100%; display: block; }
 .blog-card h3 { line-height: 1.3; }
 .blog-cover { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; margin-bottom: 30px; background: var(--bg-alt); }
 .blog-cover img { object-fit: cover; }
+
+.blog-detail-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
+.blog-detail-main { max-width: 780px; }
+.blog-detail-sidebar { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; position: sticky; top: 100px; }
+.blog-detail-sidebar h3 { font-size: 1.05rem; margin-bottom: 18px; }
+.recent-posts-list { display: flex; flex-direction: column; gap: 16px; }
+.recent-post-item + .recent-post-item { padding-top: 16px; border-top: 1px solid var(--border); }
+.recent-post-link { display: flex; gap: 12px; align-items: flex-start; }
+.recent-post-thumb { position: relative; width: 72px; height: 72px; flex-shrink: 0; border-radius: 4px; overflow: hidden; background: var(--bg-alt); }
+.recent-post-thumb img { object-fit: cover; }
+.recent-post-title { display: block; font-size: 0.88rem; font-weight: 600; color: var(--navy); line-height: 1.35; margin-bottom: 4px; transition: color 0.2s ease; }
+.recent-post-link:hover .recent-post-title { color: var(--gold); }
+.recent-post-date { display: block; font-size: 0.75rem; color: var(--grey); }
 .pagination { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 48px; font-size: 0.9rem; }
 .pagination a { color: var(--gold); font-weight: 700; }
 .blog-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 24px; margin: 0 auto; max-width: 480px; }
@@ -319,6 +332,9 @@ img { max-width: 100%; display: block; }
   .area-grid, .area-grid-wide, .blog-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .two-col, .feature-grid, .partner-grid, .contact-grid { grid-template-columns: 1fr; }
+  .blog-detail-layout { grid-template-columns: 1fr; }
+  .blog-detail-main { max-width: none; }
+  .blog-detail-sidebar { position: static; }
 }
 @media (max-width: 720px) {
   .main-nav { position: absolute; top: 100%; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); display: none; }

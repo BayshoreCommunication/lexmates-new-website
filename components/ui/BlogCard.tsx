@@ -27,10 +27,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           sizes="(max-width: 720px) 100vw, (max-width: 960px) 50vw, 33vw"
         />
       </div>
-      <span className="blog-meta">
-        {formatBlogDate(post.createdAt)}
-        {post.category?.length ? <> &middot; {post.category.join(', ')}</> : null}
-      </span>
+      <span className="blog-meta">{formatBlogDate(post.createdAt)}</span>
       <h3>{post.title}</h3>
       <p>{getBlogExcerpt(post)}</p>
       <span className="card-link">Read more &rarr;</span>
