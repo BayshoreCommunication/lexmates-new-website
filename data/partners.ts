@@ -44,12 +44,12 @@ export const partners: Partner[] = [
     id: "kamrul-islam-arif",
     name: "Kamrul Islam Arif",
     role: "Founder & Partner",
-    credential: "Chartered Accountant & Advocate",
+    credential: "Advocate & Legal Adviser",
     avatar: "/images/kamrul-islam-arif.png",
     bio: [
-      "Kamrul Islam Arif is a founding partner of Lexmates, bringing to the firm a distinctive blend of financial expertise and legal acumen that sets him apart in the fields of taxation, corporate compliance and commercial litigation.",
-      "He holds a Master’s in Accounting from the National University of Bangladesh and is a Chartered Accountant (CC), complemented by an LL.B. from the Department of Law and Justice at Bangladesh University of Business and Technology. This dual grounding in finance and law gives him an unusually sharp eye for matters where the two disciplines intersect.",
-      "Before co-founding Lexmates, Mr. Arif spent over five years at a reputed chartered accountancy firm, building hands-on expertise in financial advisory and compliance. He now serves as a trusted consultant on income tax, VAT and company law matters, advising clients with the precision of both a trained accountant and a practicing lawyer.",
+      "Kamrul Islam Arif is a founding partner of Lexmates, practicing across taxation, corporate compliance and commercial litigation.",
+      "He holds an LL.B. from the Department of Law and Justice at Bangladesh University of Business and Technology.",
+      "He serves as a trusted consultant on income tax, VAT and company law matters, advising clients as a practicing lawyer.",
       "He handles suits and cases across civil and criminal matters, and is a registered member of the Dhaka Bar Association and the Dhaka Taxes Bar Association.",
     ],
     contact: {
