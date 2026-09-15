@@ -344,7 +344,7 @@ img { max-width: 100%; display: block; }
   .main-nav a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); }
   .nav-toggle { display: flex; }
   .header-cta { display: none; }
-  .logo-img { height: 90px; }
+  .logo-img { height: 105px; }
   h1 { font-size: 2.2rem; }
   .hero h1 { font-size: 2.3rem; }
   .area-grid, .area-grid-wide, .blog-grid { grid-template-columns: 1fr; }
