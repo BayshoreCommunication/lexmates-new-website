@@ -48,8 +48,8 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="Lexmates Advocates & Legal Advisers"
-            width={328}
-            height={72}
+            width={289}
+            height={110}
             className="logo-img"
             priority
           />
